@@ -1,3 +1,6 @@
+provider "aws" {
+  
+}
 resource "aws_sqs_queue" "sqs_geracao_arquivo" {
   name                      = var.QueueName
   delay_seconds             = 90
