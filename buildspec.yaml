@@ -11,8 +11,7 @@ phases:
       - sudo terraform init
   build:
     commands:
-      - sudo export AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID"
-      - sudo export AWS_SECRET_ACCESS_KEY = "AWS_SECRET_ACCESS_KEY"
+      - printenv 
       - terraform apply -var-file="vars.tfvars" --auto-approve
       - echo Comando build aplicado
   post_build:
