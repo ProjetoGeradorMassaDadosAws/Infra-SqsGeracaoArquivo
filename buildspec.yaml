@@ -10,8 +10,7 @@ phases:
     commands:
       - sudo terraform init
   build:
-    commands:
-      - printenv 
+    commands: 
       - terraform apply -var-file="vars.tfvars" --auto-approve
       - echo Comando build aplicado
   post_build:
