@@ -1,5 +1,6 @@
 provider "aws" {
-  
+  ####
+  # Sera usado as variaveis de ambiente cadastradas no projeto do codebuild.
 }
 resource "aws_sqs_queue" "sqs_geracao_arquivo" {
   name                      = var.QueueName
